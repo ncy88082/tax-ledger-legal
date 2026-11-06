@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>隱私權政策 — 接案扣繳帳本</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="page">
+    <h1>隱私權政策</h1>
+    <p class="updated">最後更新：2026 年 11 月 6 日</p>
+  </header>
+  <main>
+    <div class="card">
+      <p>
+        「接案扣繳帳本」（以下稱本 App，套件名稱 <code>com.ganjiao.taxledger</code>）由<strong>甘蕉工作室</strong>提供，協助你整理勞報單與扣繳憑單、試算扣繳稅額與二代健保補充保費。我們重視你的隱私，本政策說明本 App 會收集哪些資料、如何使用，以及你可以怎麼刪除這些資料。
+      </p>
+    </div>
+
+    <h2>我們收集哪些資料</h2>
+    <div class="card">
+      <ul>
+        <li><strong>帳號資料：</strong>電子郵件、Firebase 使用者 ID；使用 Google 登入時另含 Google 顯示名稱。用來登入與跨裝置同步。</li>
+        <li><strong>收入與扣繳資料：</strong>你輸入或拍照辨識的勞報單／扣繳憑單內容，例如給付單位、金額、所得類別、扣繳稅額、二代健保補充保費、給付日期等。</li>
+        <li><strong>身分證字號：</strong>只保存末 4 碼，不會保存完整字號。</li>
+        <li><strong>勞報單／扣繳憑單照片：</strong>你選擇要辨識的照片會送到我們的後端（Firebase Cloud Functions），再由後端呼叫 Anthropic 的 Claude API 讀取文字。辨識完成後，後端不會長期保存該照片。本機可保留一份複本，並在 30 天後自動刪除（你也可手動刪除）。</li>
+      </ul>
+    </div>
+
+    <h2>用途</h2>
+    <div class="card">
+      <p>資料只用來提供記帳、試算、年度總表與跨裝置同步，以及客服聯繫與維護服務安全。不用在廣告上，不做跨 App 追蹤，也不出售你的資料。</p>
+    </div>
+
+    <h2>第三方服務供應商</h2>
+    <div class="card">
+      <p>為提供服務，我們使用下列服務商，它們只依本 App 的指示處理資料：</p>
+      <ul>
+        <li><strong>Google Firebase</strong>（Authentication、Firestore、Cloud Functions）：帳號登入、雲端資料儲存與同步、照片辨識後端。</li>
+        <li><strong>Anthropic</strong>（Claude API）：文字辨識。詳見 <a href="https://www.anthropic.com/legal/privacy" rel="noopener noreferrer">Anthropic 隱私權政策</a>。</li>
+      </ul>
+      <p>資料傳輸使用 HTTPS 加密。本 App 目前沒有真實金流收款；封測版的付費畫面為模擬，不會向你收費，也不會把付款資料交給第三方金流。</p>
+    </div>
+
+    <h2>我們不會做的事</h2>
+    <div class="card">
+      <ul>
+        <li>不會把你的資料分享、出售給任何第三方（為提供服務而必要的服務供應商除外）</li>
+        <li>App 內沒有廣告，也沒有第三方追蹤或分析工具</li>
+      </ul>
+    </div>
+
+    <h2>保存與刪除</h2>
+    <div class="card">
+      <ul>
+        <li>你可以隨時在 App 內「設定 → 刪除帳號」，把帳號與相關資料永久刪除。</li>
+        <li>如果沒辦法開啟 App，可以寄信申請刪除，詳見 <a href="delete-account.html">如何刪除帳號</a>。我們收到申請後，會在 <strong>7 天內</strong>完成刪除。</li>
+        <li>本機保留的照片複本最多保存 30 天，之後會自動刪除。</li>
+      </ul>
+    </div>
+
+    <h2>資料安全</h2>
+    <div class="card">
+      <p>資料在你的手機與雲端之間傳輸時全程加密（HTTPS/TLS）。雲端資料由 Firebase 存取控制保護，只有你登入的帳號本人能讀取、修改自己的資料。</p>
+    </div>
+
+    <h2>兒童</h2>
+    <div class="card">
+      <p>本 App 不以未滿 18 歲的使用者為對象。</p>
+    </div>
+
+    <h2>免責聲明</h2>
+    <div class="card">
+      <p>本 App 是試算與整理工具，不是報稅代理，也不提供稅務諮詢。實際應納稅額以財政部報稅軟體與國稅局核定為準。</p>
+    </div>
+
+    <h2>政策的修改</h2>
+    <div class="card">
+      <p>如果本政策有變動，我們會更新這個頁面並調整上方的更新日期。重大變更時，也會盡量在 App 內告知。</p>
+    </div>
+
+    <h2>聯絡我們</h2>
+    <div class="card">
+      <p>開發者：甘蕉工作室<br />如果對本政策有任何問題，歡迎寄信到 <a href="mailto:support@odit.store">support@odit.store</a>。</p>
+    </div>
+
+    <nav class="home-links" aria-label="其他頁面">
+      <a href="index.html">回首頁</a>
+      <a href="delete-account.html">如何刪除帳號</a>
+    </nav>
+  </main>
+</body>
+</html>
