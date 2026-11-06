@@ -9,7 +9,7 @@
 <body>
   <header class="page">
     <h1>隱私權政策</h1>
-    <p class="updated">最後更新：2026 年 11 月 6 日</p>
+    <p class="updated">最後更新：2026 年 11 月 6 日（真金流說明）</p>
   </header>
   <main>
     <div class="card">
@@ -25,6 +25,7 @@
         <li><strong>收入與扣繳資料：</strong>你輸入或拍照辨識的勞報單／扣繳憑單內容，例如給付單位、金額、所得類別、扣繳稅額、二代健保補充保費、給付日期等。</li>
         <li><strong>身分證字號：</strong>只保存末 4 碼，不會保存完整字號。</li>
         <li><strong>勞報單／扣繳憑單照片：</strong>你選擇要辨識的照片會送到我們的後端（Firebase Cloud Functions），再由後端呼叫 Anthropic 的 Claude API 讀取文字。辨識完成後，後端不會長期保存該照片。本機可保留一份複本，並在 30 天後自動刪除（你也可手動刪除）。</li>
+        <li><strong>購買與訂閱狀態：</strong>由 Google Play／App Store 與 RevenueCat 回傳的權益與到期資訊（不含完整付款卡號），用來開啟對應功能與辨識額度。</li>
       </ul>
     </div>
 
@@ -39,8 +40,10 @@
       <ul>
         <li><strong>Google Firebase</strong>（Authentication、Firestore、Cloud Functions）：帳號登入、雲端資料儲存與同步、照片辨識後端。</li>
         <li><strong>Anthropic</strong>（Claude API）：文字辨識。詳見 <a href="https://www.anthropic.com/legal/privacy" rel="noopener noreferrer">Anthropic 隱私權政策</a>。</li>
+        <li><strong>RevenueCat</strong>：訂閱與一次買斷的權益狀態。詳見 <a href="https://www.revenuecat.com/privacy" rel="noopener noreferrer">RevenueCat 隱私權政策</a>。</li>
+        <li><strong>Google Play 帳單／Apple App Store</strong>（依你安裝的平台）：處理付款。信用卡等付款資料由商店處理，本 App 與甘蕉工作室不會收到完整付款卡號。</li>
       </ul>
-      <p>資料傳輸使用 HTTPS 加密。本 App 目前沒有真實金流收款；封測版的付費畫面為模擬，不會向你收費，也不會把付款資料交給第三方金流。</p>
+      <p>資料傳輸使用 HTTPS 加密。若你購買年度報稅包、年費或終身方案，費用由 Google Play 或 App Store 向你收取；我們只收到購買／訂閱狀態，用來開啟對應功能。你可以在商店的訂閱管理頁取消續訂（一次買斷除外）。</p>
     </div>
 
     <h2>我們不會做的事</h2>
